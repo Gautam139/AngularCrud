@@ -1,0 +1,31 @@
+<h2 class="display4 text-center">Add Product</h2>
+      <div class="form-wrapper">
+          <form #form = "ngForm">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Product Name</label>
+                <input type="text" class="form-control" #productName="ngModel" [(ngModel)]= "service.formData.productName" name="productName" placeholder="Enter Product Name">
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputEmail1">Product Description</label>
+                  <input type="text" class="form-control" #item="ngModel" [(ngModel)]= "service.formData.item" name="item" placeholder="Enter Description">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Product Price</label>
+                    <input type="text" class="form-control" #price="ngModel" [(ngModel)]= "service.formData.price" name="item" placeholder="Enter Product Price">
+                </div>
+              <button type="submit" class="btn btn-primary"><i class="fa fa-plus " aria-hidden="true"></i> Add Product</button>
+            </form>
+      </div>
+
+
+
+<!-- <div class="row">
+  <div class="col-5">
+    <img class="image-responsive" src="https://picsum.photos/id/1058/200/200" alt="">
+  </div>
+  <div class="col-7">
+    <h3 class="title">Product Name</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, beatae error? Animi ratione ducimus magnam assumenda debitis explicabo provident blanditiis! Ea, atque rem accusantium inventore consequuntur deleniti corrupti autem exercitationem.</p>
+    <h4><b>Price: </b> $15.20</h4>
+  </div>
+</div> -->
